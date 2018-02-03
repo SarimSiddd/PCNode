@@ -1,6 +1,7 @@
 module.exports = {
-    host     : process.env.MYSQL_HOST,
-    user     : process.env.MYSQL_USER,
-    password : process.env.MYSQL_PASSWORD,
-    database : process.env.MYSQL_DATABASE
+  host     : OPENSHIFT_MYSQL_DB_HOST,
+  user     : process.env.OPENSHIFT_MYSQL_DB_USERNAME,
+  password : process.env.OPENSHIFT_MYSQL_DB_PASSWORD,
+  port     : process.env.OPENSHIFT_MYSQL_DB_PORT,
+  database : process.env.OPENSHIFT_APP_NAME
 }
